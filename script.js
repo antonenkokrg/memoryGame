@@ -97,7 +97,7 @@ function handleCardClick(event) {
         if(combos === 5)
         alert(`YOU finish with ${score} steps`)
         preventClick = false
-        if (score < localStorage.getItem("steps")) 
+        if (score > localStorage.getItem("steps")) 
             localStorage.removeItem("steps")
             localStorage.setItem("steps", score.toString())
       }
